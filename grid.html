@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<style>
+    p{
+        font-size: 14px;
+        color: #000000;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header '
+    'menu main main right'
+    'menu footer footer footer ';
+    grid-gap: 10px;
+    background-color: rgb(62, 225, 102);
+    padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+ul{
+    display: block;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;  
+    box-sizing: border-box;
+    position: relative; 
+}
+ul li{
+    font-size:20px; 
+    padding: 20px;   
+}
+ul li a{
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+}
+a:hover{
+    background: #2be6c3;
+}
+.flycar{
+    float: left;
+    padding-left: 5px;
+    width: 10%;
+    border-radius: 20px;
+    padding:auto;
+}
+.item4 {
+    max-width: 300px;
+    display: inline;  
+}
+.item4 p,
+.item4 h5{
+     padding: 20px;
+}
+.item5{
+    text-align: center;
+    
+}
+.fa{
+    font-size: 30px;
+    padding: 10px;
+}
+.mot{
+   opacity: 0.8;
+    width: 20%;
+    box-shadow: 2px 20px 5px;
+}
+
+</style>
+<body>
+        <h1>Grid Layout</h1>
+
+        <p>This grid layout contains six columns and three rows:</p>
+        
+        <div class="grid-container">
+          <div class="item1">
+              <img class ="flycar" src="flycar.jpg" alt=" flycar">
+              <h1>Grid-in-CSS</h1>
+          </div>
+          <div class="item2">
+            <ul>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#">profiles</a></li>
+                <li><a href="#"> Object</a></li>
+                <li><a href="#"> About</a></li>
+                <li><a href="#"> Contact</a></li>
+
+           </ul>
+        </div>
+          <div class="item3">
+              <h2>
+                Ist ein guter Trainer
+              </h2>
+              <p>
+                    Anstatt jedes Problem selbst zu lösen, nutzen die besten Führungskräfte die Herausforderungen als Unterrichtsmomente, so Google. 
+                    Sich Zeit nehmen, das Problem gemeinsam identifizieren und nach Lösungsansätzen zu suchen, hilft den Mitarbeitern, auch künftig nach ähnlichen logischen Mustern zu denken. 
+                    Gute Führungskräfte leiten ihre Teams und geben bei Bedarf tiefere Einblicke in die Sache an sich. 
+                    So kann das Team wertvolle Erfahrungen sammeln und weiter wachsen.  
+            </p>
+              <img class="mot" src="mot.jpg" alt="">
+          </div>  
+          <div class="item4">
+              <h5>Ermächtigt das Team und vermeidet Mikromanagement</h5>
+              <p>Gute Manager und Managerinnen geben ihren Mitarbeitern die Freiheit, 
+                  nach der sie sich sehnen: Freiheit, 
+                  ihre Ideen zu erforschen, 
+                  kluge Risiken einzugehen und auch Fehler zu machen. 
+                  Sie stellen zudem die physischen Tools bereit, 
+                  die ihre Mitarbeiter benötigen, 
+                  und ermöglichen flexible Zeitpläne und Arbeitsumgebungen, 
+                  heißt es vonseiten Googles. 
+                  Das Ziel: Zum einen sollen Führungskräfte nicht in die Mühle übertriebener Detailorientierung geraten. 
+                  Zum anderen sollen Mitarbeiter selbstständiger werden.</p>
+              <h5>Schafft ein Umfeld, das Erfolg und Wohlbefinden vereint</h5>
+              <p>Google glaubt, dass der Schlüssel zu guter Teamarbeit in der Schaffung einer „psychologisch sicheren“ Umgebung liegt. 
+                  Mitarbeiter müssen davon ausgehen können, 
+                  dass niemand im Team andere Kollegen in Verlegenheit bringt oder bestraft, 
+                  wenn sie einen Fehler gemacht haben. Andernfalls werden sie ihn nicht eingestehen oder versuchen sogar, 
+                  ihn zu vertuschen. 
+                  Eine Umgebung, 
+                  die denunziert, 
+                  führt dazu, das keine Fragen gestellt oder neue Ideen vorgelegt werden. 
+                  Teams leben von Vertrauen – und gute Führungskräfte helfen, 
+                  Vertrauen aufzubauen.</p>
+          </div>
+          <div class="item5">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+
+
+
+
+
+          </div>
+        </div>
+        
+    
+</body>
+</html>
