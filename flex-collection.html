@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Flex-collecton</title>
+</head>
+<body>
+    <div class="swatches">
+        <button class="swatch swatch-1"></button>
+        <button class="swatch swatch-2"></button>
+        <button class="swatch swatch-3"></button>
+        <button class="swatch swatch-4"></button>
+    </div>
+    
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="paras">
+                        Our Programs
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+               
+                    <div class="program ">
+                            <div class="pic-content pic-int">
+                        <a class="a-block class-both" href="#">
+                            <img src="images/img_1.jpg" alt="">
+                        </a>
+                        <h5>Embrace Your Edge</h5>
+                    </div>
+                    </div>
+                   
+                        <div class="program ">
+                                <div class="pic-content pic-int">
+                            <a class="a-block" href="#">
+                                <img src="images/img_2.jpg" alt="">
+                            </a>
+                            <h5>Vinyasa Yogas</h5>
+                        </div>
+                    </div>
+                    <div class="program ">
+                        <div class="pic-content pic-int">
+                            <a class="a-block" href="#">
+                                <img src="images/img_3.jpg" alt="">
+                            </a>
+                            <h5>Yoga to Build Resilience</h5>
+                        </div>
+                    </div>
+                    <div class="program">
+                        <div class="pic-content pic-int">
+                            <a class="a-block" href="#">
+                                <img src="images/img_4.jpg" alt="">
+                            </a>
+                            <h5>Rise & Shine</h5>
+                        </div>
+                    </div>
+                    <div class="program">
+                        <div class="pic-content pic-int">
+                            <a class="a-block " href="#">
+                                <img src="images/img_5.jpg" alt="">
+                            </a>
+                            <h5>Bend & Stretch</h5>
+                        </div>
+                    </div>
+                    <div class="program">
+                        <div class="pic-content pic-int">
+                            <a class="a-block class-both" href="#">
+                                <img src="images/img_6.jpg" alt="">
+                            </a>
+                            <h5>Barre Workout</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script>
+        var $swatches = $('.swatch');
+
+        $swatches.on('click', function(){
+            $('.clicked').removeClass('clicked');
+            $(this).addClass('clicked');
+        });
+    </script>
+</body>
+</html>
